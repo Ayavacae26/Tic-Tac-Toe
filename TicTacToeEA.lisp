@@ -6,15 +6,20 @@
 ;;
 
 ;; ----------copy and paste functions --------------
+;; tests the print board function
 ;; (Print-board *sampleboard*)
-
+;; loads file in
+;; (load "~/Users/erikayavaca/Documents/ayavacatictactoe/TicTacToeEA.lisp")
+;; test victory function
+;; ()
 
 
 ;; Example board - represented as a list of nine markers on the
 ;; tic-tac-toe board
-
 (defparameter *sampleboard* (list 'x 'x 'x '- 'o '- '- 'o '-))
 
+
+:: ---------------functions from class --------------------------
 ;; Prints a board that is a list of nine symbols in row-major order
 ;;
 (defun print-board (board)
