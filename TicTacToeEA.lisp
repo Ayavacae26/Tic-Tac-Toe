@@ -1,11 +1,16 @@
 ;;Erik Ayavaca-Tirado
-;;11/28/18
+;;
 ;; Note:
 ;; These functions were provided by the professor when we worked on it on class together
 ;; Functions for a tic-tac-toe game
 ;;
 
-;; Example board - represented as a list of nine markers on the 
+;; ----------copy and paste functions --------------
+;; (Print-board *sampleboard*)
+
+
+
+;; Example board - represented as a list of nine markers on the
 ;; tic-tac-toe board
 
 (defparameter *sampleboard* (list 'x 'x 'x '- 'o '- '- 'o '-))
@@ -30,7 +35,7 @@
 ;; Determines if a list representing a row or column or diagonal
 ;; of a tic-tac-toe board is a victory
 ;; FIXME: needs to return false for three '- items in the list.
-(defun victory (alist) 
+(defun victory (alist)
   (and (equal (first alist) (second alist))
        (equal (second alist) (third alist))))
 
@@ -50,5 +55,11 @@
   (list (nth col board)
         (nth (+ col 3) board)
         (nth (+ col 6) board)))
-        
+
+;; ----------------------------------------------------------
 ;; This is were I will put my own function(s) for iteration 1
+;; no actual functions were created for iteration 1
+;; ----------------------------------------------------------
+
+;; Iteration 2 functions
+;; ----------------------------------------------------------
